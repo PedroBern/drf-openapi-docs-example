@@ -1,0 +1,13 @@
+{
+	"name": "DRF",
+	"version": "1.0.0",
+	"license": "MIT",
+	"dependencies": {
+		"openapi-typescript": "^3.2.3"
+	},
+	"scripts": {
+    "bootstrap": "yarn install && cd ./docs && yarn install",
+		"generate:open-api": "./manage.py generateschema --file openapi-schema.yml",
+		"generate:specs": "yarn run openapi-typescript openapi-schema.yml -o openapi-schema.ts"
+	}
+}
