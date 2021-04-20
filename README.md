@@ -1,6 +1,8 @@
 # DRF
 
-## Setup
+[live preview](https://drf-openapi-docs-example.vercel.app/)
+
+## Local dev
 
 ```bash
 python3 -m venv env
